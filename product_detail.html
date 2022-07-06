@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ALL PRODUCTS-REDSTORE</title>
+    <link rel="stylesheet"href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,600;0,700;1,300;1,500&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+</head>
+<body>
+
+   <div class="container">
+        <div class="navbar">
+             <div class="logo">
+                   <img src="logo.png"width="125px"></div>
+                           <nav>
+                                <ul id="menu-items">
+            
+                                      <li> <a href="index.html">Home</a></li>
+                                      <li> <a href="login.html">About</a></li>
+                                       <li> <a href="product_detail.html">Products</a></li>
+                                       <li> <a href="cart.html">Account</a></li>
+                                         <li> <a href="login.html">Contact</a></li>
+            
+                                   </ul>
+                               </nav>
+                     <img src="cart.png"width="30px"height="30px">
+                     <img src="menu.png" class="menu-icon" onclick="menutoggle()">
+
+               
+         </div>
+
+</div>
+</div>
+
+
+
+
+
+
+
+    <!-------------single product details-->   
+   
+<div class="small-container single-product">
+    <div class="row">
+<div class="col-2">
+        <img src="gallery-1.jpg" width="100%" id="product-img">
+        <div class="small-img-row">
+        <div class="small-img-col">
+        <img src="gallery-1.jpg" width="100%" class="small-img">
+        </div>
+        <div class="small-img-col">
+        <img src="gallery-2.jpg" width="100%" class="small-img">
+        </div>
+        <div class="small-img-col">
+        <img src="gallery-3.jpg" width="100%" class="small-img">
+        </div>
+        <div class="small-img-col">
+        <img src="gallery-4.jpg" width="100%" class="small-img">
+        </div>
+    </div>
+        </div>
+        <div class="col-2">
+            <p>Home / T-Shirt</p>
+            <hl>Red Printd T-Shirt by HRX</hl>
+            <h4>$50.00</h4>
+            <select>
+                koption>Select Size</option>
+                <option>XXL</option>
+                <option>XL</option>
+                <option>Large</option>
+                <option>Medium</option>
+                <option>Small</option>
+            </select>
+            <input type="number" value="1">
+            <a href="" class="btn">Add To Cart</a>
+
+            <h3>Product Details <i class="fa fa-indent"></i></h3>
+            <br>
+            <p>
+                Give your summer wardrobe a style upgrade with the HRX Men's Active T-shirt. Team it with a pair of shorts for our morning workout or a denims for an evening out with the guys.
+            </p>
+                                         
+        </div>
+    </div>
+</div>
+
+<!--title--->
+       <div class="small-container">
+              <div class="row row-2">
+                    <h2>Related Products</h2>
+                    <p>View more</p>
+               </div>
+       </div>
+<!--products------> 
+       <div class="small-container">
+               <div class="row">
+                       <div class="col-4"></div>
+    
+                    </div>
+                    <div class="row">
+                        <div class="col-4">
+                            <img src="product-1.jpg">
+                            <h4>Red Printed T-Shirt</h4>
+                            <div class="rating">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                    
+                            </div>
+                        
+                             <p>2500 rupees</p>
+                             </div>
+                             <div class="col-4">
+                                <img src="product-2.jpg">
+                                <h4>Red Printed T-Shirt</h4>
+                                <div class="rating">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                    
+                                </div>
+                                 <p>3000 rupees</p>
+                                 </div>
+                                 <div class="col-4">
+                                    <img src="product-3.jpg">
+                                    <h4>Red Printed T-Shirt</h4>
+                                    <div class="rating">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                        
+                                    </div>
+                                     <p>2000 rupees</p>
+                                     </div>
+                                     <div class="col-4">
+                                        <img src="product-4.jpg">
+                                        <h4>Red Printed T-Shirt</h4>
+                                        <div class="rating">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-regular fa-star"></i>
+                            
+                                        </div>
+                                         <p>1800 rupees</p>
+                                         </div>
+                    
+                    
+                                         
+                                    
+                    </div>
+                
+            </div>
+                    
+
+
+
+
+
+   <!-----------js for toggle menu-->
+<script>
+    var menuItems=document.getElementById("menuItems");
+       menuItems.style.maxHeight="0px";
+       function menutoggle()
+       {
+           if( menuItems.style.maxHeight=="0px"){
+            menuItems.style.maxHeight="200px";
+           }
+           else{
+            menuItems.style.maxHeight="0px";
+           }
+       }
+</script>                     
+
+<!-----------footer-->
+<div class="footer">
+    <div class="small-container">
+        <div class="row">
+            <div class="footer-col-1">
+                <h3>
+                    download our app
+                </h3>
+                <p>Download app for Android and ios mobile phone</p>
+                <div class="app-logo">
+                    <img scr="play-store.png">
+                    <img src="app-store.png">
+                </div>
+            </div>
+            <div class="footer-col-2">
+                <img src="logo-white.png">
+                <p>Our Purpose is to Sustainably make the Pleasure and Benefits of Sports accessible to many</p>
+            </div>
+            <div class="footer-col-2">
+                <h3>Useful Links</h3>
+                 <ul>
+                     <li>Blog Post</li>
+                     <li>Coupons </li>
+                     <li>Return Policy</li>
+                     <li>Join Affiliate</li>
+                     
+                 </ul>
+            </div>
+            <div class="footer-col-2">
+                <h3>Follow Us</h3>
+                 <ul>
+                     <li>Facebook</li>
+                     <li>Twitter </li>
+                     <li>Instagram</li>
+                     <li>Youtube</li>
+                     
+                 </ul>
+            </div>
+        </div>
+        <hr>
+        <p class="copyright">copyright Shalini Tyagi 2021</p>
+
+        </div>
+    </div>
+</div>
+<!--------js for product gallery--->
+<script>
+    var ProductImg = document.getElementById("ProductImg");
+    var SmallImg = document.getElementsByClassName("small-img");
+  
+      SmallImg[0].onclick = function()
+      {
+          ProductImg.src = SmallImg[0].src;
+      }
+      SmallImg[1].onclick = function()
+      {
+          ProductImg.src = SmallImg[1].src;
+      }
+      SmallImg[2].onclick = function()
+      {
+          ProductImg.src = SmallImg[2].src;
+      }
+      SmallImg[3].onclick = function()
+      {
+          ProductImg.src = SmallImg[3].src;
+      }
+          
+   </script>
+
+</body>
+</html>
+
